@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilizando el color del body */
+body{
+    background-color: #99999923;
+}
+
+/* CONTENIDO GENERAL */
+
+/* estilizando la etiqueta logo */
+.logo{
+    width: 50px;
+}
+
+
+/* estilizando el div chat_container */
+.chat_container_top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilizando el div chat_box */
+.chat_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px 0;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+
+.chat_box p{
+    color: #222;
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+/* estilizando el div user_container */
+.user_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilizando el div user */
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user .logo_title{
+    margin-left: 12px;
+    color: #333;
+    transition: color, 200ms ease;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.user .logo_title:hover{
+    margin-left: 12px;
+    color: #444;
+    cursor: pointer;
+}
+
+.user .time_send{
+    color: #555;
+    font-size: 20px;
+    margin-left: 14px;
+}
+
+/* estilizando la imgen icon_delete */
+.icon_delete{
+    color: #b80909;
+    transition: color, 200ms ease;
+}
+
+.icon_delete:hover{
+    color: #800909;
+}
+
+/* estilizando el div link_delete */
+.link_delete{
+    color: #b80909;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color, 200ms ease;
+}
+
+.link_delete:hover{
+    color: #800909;
+}
+
+
+/* estilizando el div chat_bottom */
+.chat_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilizando el div reply_container */
+.reply_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reply_container a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #73c4d3;
+    font-size: 18px;
+    transition: color, 200ms ease;
+}
+
+.reply_container a:hover{
+    color: #447780;
+}
+
+/* estilizando la imagen icon_Arrow */
+
+.icon_Arrow{
+    color: #73c4d3;
+    font-size: 20px;
+    transition: color, 200ms ease;
+}
+
+.icon_Arrow:hover{
+    color: #447780;
+}
+
+/* estilizando el div btn_chat */
+.btn_chat{
+    padding: 8px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    background-color: #73c4d385;
+    transition: background, 200ms ease;
+}
+
+.btn_chat a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+
+.btn_chat:hover{
+    background-color: #56929c85;
+}
+
+/* estilizando el div chat_container_bottom */
+.chat_container_bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    background-color: #f9f9f9;
+    border-top: 0.2px solid #22222234;
+}
+
+/* estilizando el div input_msg_container */
+.input_msg_container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilizando el div logo_chat_bottom */
+.logo_chat_bottom{
+    width: 60px;
+    margin-right: 18px;
+    transition: all 100ms ease;
+}
+
+.logo_chat_bottom:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+/* estilizando el div input_chat_buttom */
+.input_chat_buttom{
+    padding: 20px 15px;
+    width: 60%;
+    border-radius: 30px;
+    border: 1px solid #999999a2;
+    outline: none;
+}
+
+.input_chat_buttom:hover{
+  background-color: #99999983;
+}
+
+.input_chat_buttom:focus{
+    background-color: #99999983;
+}
+
+.input_chat_buttom::placeholder{
+   color: #447780;
+   font-size: 16px;
+}
+
+/* estilizando el div btn_chat_bottom */
+.btn_chat_bottom{
+    border-radius: 50px;
+    border: none;
+    padding: 20px 30px;
+    background-color: #222;
+    margin-left: 12px;
+    transition: background, 100ms ease;
+}
+
+.btn_chat_bottom:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+
+.btn_chat_bottom a{
+    color: #447780;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;  
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:400px) and (max-width:800px) {
+
+    .chat_box{
+        width: 70%;
+        
+    }
+}
