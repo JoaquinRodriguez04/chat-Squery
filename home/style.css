@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+/* CONTENIDO GENERAL */
+
+/* home_welcome */
+
+/* estilizando el div presentation */
+.presentation{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_presentation{
+    color: #222;
+    font-size: 50px;
+}
+
+.info_presentation{
+    font-size: 23px;
+    width: 80%;
+}
+
+/* estilizando el div logo_container */
+.logo_container{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* estilizando el div to_register */
+
+.to_register_container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+
+.to_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.to_register input{
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 15px;
+    outline: none;
+    border: 1px solid #111;
+    background-color: #222;
+    width: 100%;
+    transition: background, 200ms ease;
+    color: #f9f9f9;
+}
+
+.to_register input:hover{
+    background-color: #111;
+}
+
+.to_register input:focus{
+    background: linear-gradient(160deg, #111,#333,#71a9b6);
+}
+
+
+.to_register input::placeholder{
+    color: #999;
+    font-size: 15px;
+}
+
+.to_register input:focus::placeholder{
+    color: #666;
+}
+
+.to_register label{
+    width: 100%;
+    color: #666;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+/* estilizando la clase btn_to_register*/
+
+.btn_to_register{
+    padding: 12px 60px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(160deg, #111,#333,#4b96a7);
+    background-color: #222;
+    margin-top: 20px;
+    transition: background 0.5s ease;
+}
+
+.btn_to_register:hover{
+    background: linear-gradient(210deg, #111,#333,#4b96a7);
+}
+
+.btn_to_register a{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 16px;
+}
